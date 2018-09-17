@@ -2,7 +2,7 @@ import React from 'react';
 import { getFunName } from '../helpers';
 import { PropTypes } from 'prop-types';
 
-class StorePicker extends React.Component {
+export default class StorePicker extends React.Component {
     constructor() {
         super();
         this.goToStore = this.goToStore.bind(this);
@@ -29,4 +29,3 @@ class StorePicker extends React.Component {
 StorePicker.contextTypes = {
     router: PropTypes.object
 }
-export default StorePicker;
